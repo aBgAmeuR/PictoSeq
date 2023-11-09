@@ -4,6 +4,7 @@ import '@/styles/globals.css'
 import { NextUIProvider } from '@/hooks/next-ui-provider'
 import { AuthProvider } from '@/hooks/auth-provider'
 import { ThemeProvider } from '@/hooks/theme-provider'
+import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={inter.className}>
+      <body className={cn(inter.className, 'bg-background')}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <AuthProvider>
             <NextUIProvider>
