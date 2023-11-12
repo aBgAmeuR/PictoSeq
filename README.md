@@ -1,4 +1,4 @@
-![Header](./src/main/resources/images/github-header-image.png)
+![Header](https://github.com/aBgAmeuR/PictoSeq/assets/113059124/3a362d4c-b4f3-40d6-b8fb-4323370eacb4)
 
 ## 1. Features
 The application offers the following features:
