@@ -20,11 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={cn(inter.className, 'bg-background')}>
+      <body className={cn(inter.className, 'bg-background w-screen')}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <AuthProvider>
             <NextUIProvider>
-              {children}
+            {children}
             </NextUIProvider>
           </AuthProvider>
         </ThemeProvider>

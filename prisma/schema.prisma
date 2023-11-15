@@ -11,8 +11,21 @@ datasource db {
 }
 
 model Project {
-  id          Int     @id @default(autoincrement())
-  name        String
-  userEmail   String  @unique
-  description String?
+  id                   Int           @id @default(autoincrement())
+  userId               String
+  name                 String
+  directionSeqTitle    String        @default("TOP")
+  directionPictoNumber String        @default("BOTTOM")
+  directionPictoTitle  String        @default("TOP")
+  color                String        @default("#808080")
+  directionSeq         String        @default("HORIZONTAL")
+  pictogramme          Pictogramme[]
+}
+
+model Pictogramme {
+  id        Int     @id @default(autoincrement())
+  keyword   String
+  image     String
+  project   Project @relation(fields: [projectId], references: [id])
+  projectId Int
 }

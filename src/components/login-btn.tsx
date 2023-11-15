@@ -1,5 +1,6 @@
 'use client';
 
+import { Button } from '@nextui-org/react';
 import { useSession, signIn, signOut } from 'next-auth/react';
 
 export function LoginBtn() {
@@ -8,14 +9,14 @@ export function LoginBtn() {
     return (
       <>
         Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
+        <Button onClick={() => signOut()}>Sign out</Button>
       </>
     );
   }
   return (
     <>
       Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
+      <Button onClick={() => signIn()}>Sign in</Button>
     </>
   );
 }

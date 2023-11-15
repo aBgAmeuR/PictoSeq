@@ -5,7 +5,7 @@ import { PropsWithChildren } from 'react'
 
 export function NextUIProvider({ children }: PropsWithChildren) {
   return (
-    <Provider>
+    <Provider className='w-full h-full'>
       {children}
     </Provider>
   )

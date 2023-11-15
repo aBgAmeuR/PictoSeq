@@ -6,9 +6,6 @@ import { ThemeSwitcher } from '@/components/theme-switcher';
 export default async function Home() {
   const user = await getCurrentUser();
 
-  console.log(user);
-  
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background text-default-900">
       <h1>PictoSeq</h1>
