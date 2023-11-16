@@ -11,3 +11,11 @@ The application offers the following features:
 
 ## 2. Using the Arasaac API
 The application uses the Arasaac API to obtain pictogram images. HTTP requests are made using the JDK/JRE library and JSON responses are parsed with the Jackson library.
+
+## 3. Build with
+
+- [Next.js](https://nextjs.org/): Front-end framework based on React.
+- [React](https://reactjs.org/): JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/): JavaScript overlay that adds static types.
+- [Tailwind CSS](https://tailwindcss.com/): A highly customizable utility CSS framework for building custom user interfaces.
+- [Figma](https://www.figma.com/): A web-based user interface design tool.
